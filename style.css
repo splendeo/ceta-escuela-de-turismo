@@ -1,0 +1,80 @@
+/*
+ * Theme Name:     AlbinoMouse child
+ * Theme URI:      http://splendeo.es/
+ * Description:    Child theme for the Albino Mouse theme
+ * Author:         Francisco de Juan
+ * Author URI:     http://www.fjuan.es/
+ * Template:       albinomouse
+ * Version:        0.1.0
+ * */
+
+@import url("../albinomouse/style.css");
+
+.site-header {
+  background: #DC241F;
+  height: 125px;
+  margin-bottom: 10px
+}
+
+.entry-header {
+  color: #838182;
+}
+.site-title {
+  display: block;
+  float: none;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.home-img {
+  float: left;
+  width: 130%;
+}
+
+@media only screen and (max-width: 970px) {
+  .one_third_col { 
+      width: 30%; 
+    }
+  .home-img {
+    margin-left: -100px;
+  }
+
+    /*--- Footer ---*/  
+  #footer-info {
+    padding-top: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 970px) {
+  /*--- Footer ---*/
+  #footer-widgets {
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-img {
+    margin-left: -70px;
+  }
+}
+
+#footer-info {
+  clear: none;
+}
+
+#content {
+  margin-bottom: -10px;
+}
+
+#content li {
+  list-style-image: url(img/red-square.png);
+}
+
+.entry-footer-meta, .main-small-navigation {
+  display: none;
+}
+
+.float-right {
+  float: right;
+}
