@@ -19,6 +19,10 @@
 .entry-header {
   color: #838182;
 }
+
+.site-navigation {
+  display: none;
+}
 .site-title {
   display: block;
   float: none;
