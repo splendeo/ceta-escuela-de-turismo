@@ -10,11 +10,7 @@
 <?php $options = get_option( 'albinomouse' ); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if(! is_front_page()) : ?>
-		<header class="entry-header">
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-		</header><!-- end .entry-header -->
-	<?php endif; ?>
+
 	<div class="entry-content">
 		<div class="clear">
 			<?php if (has_post_thumbnail() && isset($options['thumbnail-size'])) : ?>
