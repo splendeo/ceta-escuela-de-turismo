@@ -13,7 +13,6 @@
 .site-header {
   background: #DC241F;
   height: 125px;
-  margin-bottom: 10px
 }
 
 .entry-header {
@@ -62,6 +61,24 @@ div.grey a.planificacion {
     background: no-repeat url(img/planificacion.png) 0 10px;
 }
 
+div.people {
+  height: 220px;
+  width: 130%;
+  background: no-repeat url(img/people.jpg) center 10px;
+  position: relative;
+  z-index: -1;
+  top: -50px;
+  left: -100px;
+
+}
+
+@media only screen and (min-width: 970px) {
+  div.people {
+    left: 0;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 970px) {
   .one_third_col { 
       width: 30%; 
@@ -81,6 +98,7 @@ div.grey a.planificacion {
   #footer-widgets {
     margin-top: 2em;
   }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -96,6 +114,12 @@ div.grey a.planificacion {
   }
   div.grey a.planificacion {
       background: no-repeat url(img/planificacion.png) 0 14px;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+    div.people {
+    top: -25px;
   }
 }
 
