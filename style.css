@@ -63,7 +63,7 @@ div.grey a.planificacion {
 
 div.people {
   height: 220px;
-  width: 130%;
+  width: 140%;
   background: no-repeat url(img/people.jpg) center 10px;
   position: relative;
   z-index: -1;
