@@ -10,6 +10,115 @@
 
 @import url("../albinomouse/style.css");
 
+@media only screen and (max-width: 1100px) {
+
+  /*--- Header ---*/
+  .site-title {
+    display: block;
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+  .site-logo {
+    display: block;
+    float: none;
+    margin-top: 0;
+  }
+  .site-description {
+    background-color: transparent;
+    color: #4c4b4a;
+    line-height: 1;
+    margin: 0.1em 0 1em;
+    padding: 0;
+  }
+  .site-description:after {
+    border: 0 !important;
+  }
+  #header-searchform {
+    clear: both;
+    width: 100%;
+  }
+    
+  /*--- Content ---*/
+  #content,
+  .one_half_col,
+  .one_third_col,
+  .two_third_col,
+  .three_fourth_col,
+  .one_fourth_col,
+  fieldset,
+  .comment-form-author,
+  .comment-form-email,
+  .comment-form-url,
+  .comment-form-comment,
+  #footer-widgets,
+  select {
+    max-width: 100%;
+    width: 100%;
+  }
+  #content {
+    float: none;
+    margin-bottom: 3.5em;
+  }
+
+  /*--- Navigation ---*/
+  .main-small-navigation ul {
+    margin: 0 0.5em 0.5em;
+  }
+  
+  /*--- Sidebar ---*/
+  #sidebar {
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    width: 100%
+  }
+  
+  /*--- Footer ---*/  
+  #footer-info {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1100px) {
+
+  /*--- Container ---*/
+  .container {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%
+  }
+  
+  /*--- Navigation ---*/
+  .main-small-navigation li a {
+      font-size: 1.4em;
+      font-weight: bold;
+      line-height: 2;
+  }
+  
+  /*--- Form Elements ---*/
+  input[type="text"],
+  input[type="password"] {
+    width: 60%;
+  }
+
+  /*--- Footer ---*/
+  #footer-widgets {
+    margin-top: 3.5em;
+    margin-bottom: 0;
+  }
+  #footer1, #footer2, #footer3, #footer4 {
+    float: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
+  }
+  #footer aside {
+    width: 80% !important;
+  }
+}
+
+
 .site-header {
   background: #DC241F;
   height: 125px;
@@ -32,7 +141,8 @@
 
 .home-img {
   float: left;
-  width: 130%;
+  width: 125%;
+  margin-top: -50px;
 }
 
 div.grey {
@@ -79,7 +189,7 @@ div.people {
   }
 }
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 1100px) {
   .one_third_col { 
       width: 30%; 
     }
@@ -98,7 +208,26 @@ div.people {
   #footer-widgets {
     margin-top: 2em;
   }
+}
 
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+  .home-img {
+    width: 130%;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 970px) {
+  .home-img {
+    float: left;
+    width: 125%;
+    margin-top: -50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #content {
+    margin-top: 2.5em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -122,6 +251,7 @@ div.people {
     top: -25px;
   }
 }
+
 
 #footer{
   margin-top: 20px;
